@@ -78,3 +78,9 @@ form button {
 form button:hover {
   background: #da4664;
 }
+
+@media (max-width: 500px) {
+  form {
+    padding: 16px;
+  }
+}
