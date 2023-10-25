@@ -1,0 +1,80 @@
+form {
+  background: white;
+  padding: 64px;
+  border-radius: 20px 20px 0px 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  background: #fafafc;
+  height: 40px;
+  margin: 8px 0 0 0;
+  padding: 8px;
+
+  color: #4e4958;
+
+  border: 1px solid #e6e6f0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+textarea {
+  min-height: 128px;
+}
+
+.input-name-wrapper {
+  display: flex;
+  gap: 22px;
+}
+
+.input-name-wrapper > div {
+  width: 100%;
+}
+
+form button {
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+
+  background: #ff5374;
+  border-radius: 20px;
+
+  font-family: "Staatliches";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+form button:hover {
+  background: #da4664;
+}

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: var(--ff-primary);
+  color: var(--text-color);
+  font-size: 62.5%;
+
+  --ff-primary: "Roboto", sans-serif;
+  --text-color: #368cc9;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 5px solid #368cc9;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: large;
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+}
+
+main {
+  /* background: var(--text-color); */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.atracao-container {
+  display: flex;
+  align-items: row;
+  justify-content: space-around;
+}
+
+.atracao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  border: solid 2px black;
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 200px;
+}
+
+.atracao img {
+  height: 100px;
+  width: 100px;
+}
+
+.atracao p {
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.atracao a {
+  align-self: flex-end;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gallery img {
+  object-fit: cover;
+  max-height: 300px;
+  align-self: center;
+}
+
+.selector {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+#right {
+  color: black;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background: #ff5374;
+  border-radius: 20px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#left {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background: #ff5374;
+  border-radius: 20px;
+  rotate: 180deg;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .atracao-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

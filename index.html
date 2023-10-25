@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel World</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+
+    <script src="js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Travel World</h1>
+      <img
+        src="./assets/pngtree-sailing-boat-png-image_1824189.jpg"
+        alt="logo travel world"
+      />
+    </nav>
+
+    <main>
+      <section>
+        <h2>Local:</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+          quibusdam quae placeat consequuntur consectetur explicabo distinctio
+          eius odit quaerat provident ab illum commodi, saepe ut? Voluptatem
+          asperiores dolore dignissimos veritatis?
+        </p>
+      </section>
+
+      <section>
+        <h2>Atrações</h2>
+        <ul class="atracao-container">
+          <li class="atracao">
+            <h3>Picininha amor</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              repudiandae nesciunt cumque itaque. Nulla quod excepturi id iste,
+              ipsum, impedit quos illo illum quae, magni laudantium accusantium!
+              Accusantium, dolorem illum.
+            </p>
+            <img
+              src="https://img.freepik.com/fotos-premium/palmeiras-em-uma-praia-ao-por-do-sol_865967-48808.jpg"
+              alt="image atração"
+            />
+            <a href="http://google.com">Mais informações</a>
+          </li>
+          <li class="atracao">
+            <h3>Picininha amor</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit,
+              esse vero. Numquam accusamus magni harum porro aliquid voluptas
+              quia reprehenderit, ipsa rerum beatae minus, ex officia quae aut,
+              odit soluta.
+            </p>
+            <img
+              src="https://img.freepik.com/fotos-premium/palmeiras-em-uma-praia-ao-por-do-sol_865967-48808.jpg"
+              alt="image atração"
+            />
+            <a href="http://google.com">Mais informações</a>
+          </li>
+          <li class="atracao">
+            <h3>Picininha amor</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos a
+              minus voluptate quisquam veniam, ex culpa maxime sed ipsa iste
+              accusantium consequuntur error corrupti similique, vel hic
+              mollitia eligendi quasi!
+            </p>
+            <img
+              src="https://img.freepik.com/fotos-premium/palmeiras-em-uma-praia-ao-por-do-sol_865967-48808.jpg"
+              alt="image atração"
+            />
+            <a href="http://google.com">Mais informações</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Galeria:</h2>
+        <div class="gallery">
+          <img
+            id="imgGallery"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdRsdUBoWqeSvYC-yOADKwy9MBC1e1vunsjkYfZz37&s"
+            alt="image atração"
+          />
+          <div class="selector">
+            <div id="left">
+              <svg
+                width="20"
+                height="20"
+                stroke="currentColor"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.5 15L12.5 10L7.5 5"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div id="right">
+              <svg
+                width="20"
+                height="20"
+                stroke="currentColor"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.5 15L12.5 10L7.5 5"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contato</h2>
+        <form id="contact-form">
+          <fieldset>
+            <div class="fieldset-wrapper">
+              <div class="input-name-wrapper">
+                <div class="input-wrapper">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" required />
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email" aria-placeholder="email">
+                  Email <span>(digite um email válido)</span>
+                </label>
+                <input type="email" id="email" required />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" required></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <button form="contact-form">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
